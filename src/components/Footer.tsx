@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
         stagger: 0.2,
         scrollTrigger: {
           trigger: container.current,
-          start: "top 50%",
+          start: "top 70%",
         },
       });
     },

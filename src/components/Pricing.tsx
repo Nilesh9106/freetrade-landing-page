@@ -8,6 +8,7 @@ import AnimatedButton2 from "./AnimatedButton2";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -90,7 +91,16 @@ const Pricing = () => {
     { scope: container }
   );
   return (
-    <>
+    <div className="relative overflow-hidden">
+      <Image
+        src={
+          "https://cdn.prod.website-files.com/66289cd2c30bc8d40bd60733/667e66c3ba817f78b760afbe_Pricing%20Gradient.avif"
+        }
+        alt="Footer"
+        width={1000}
+        height={400}
+        className="h-auto w-full -z-10 absolute  -top-20 left-0"
+      />
       <div className="text-center my-10">
         <div className="text-4xl">Pick the plan that suits you best</div>
         <div className="my-3 text-lg">
@@ -152,7 +162,7 @@ const Pricing = () => {
           Compare Plans
         </AnimatedButton2>
       </div>
-    </>
+    </div>
   );
 };
 

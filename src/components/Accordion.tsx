@@ -1,4 +1,6 @@
 "use client";
+import acc1 from "@/assets/acc1.avif";
+import acc2 from "@/assets/acc2.avif";
 import acc3 from "@/assets/acc3.avif";
 import gsap from "gsap";
 import { Plus } from "lucide-react";
@@ -15,7 +17,7 @@ const accordionData = [
       text: "Open an ISA",
       href: "#",
     },
-    image: acc3,
+    image: acc1,
   },
   {
     title: "Personal pension",
@@ -25,7 +27,7 @@ const accordionData = [
       text: "Open an SIPP",
       href: "#",
     },
-    image: acc3,
+    image: acc2,
   },
   {
     title: "General Investment Account",
